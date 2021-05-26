@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brown_main">#D5A6A6</color>
+    <color name="gray_light">#C5BABD</color>
+    <color name="brown_dk">#D5A6A6</color>
+    <color name="red_br">#36070B</color>
+    <color name="orange">#BA5A31</color>
+    <color name="yellow">#FBD87F</color>
+    <color name="black">#FF000000</color>
+    <color name="pale_grey">#20000000</color>
+    <color name="main_text">#372323</color>
+    <color name="piece_A">#05EBF3</color>
+    <color name="piece_B">#7D118F</color>
+    <color name="piece_C">#FBF70A</color>
+    <color name="piece_D">#5F5F5F</color>
+    <color name="red">#FF0000</color>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ua.kpi.comsys.IV8329">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/greeting_icon"
+        android:label="@string/app_index"
+        android:roundIcon="@mipmap/greeting_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MP_Lab.NoActionBar">
+        <activity
+            android:name=".Lab1"
+            android:label="@string/index_of_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BookActivity"/>
+        <activity android:name=".AddBookActivity"/>
+    </application>
+
+</manifest>

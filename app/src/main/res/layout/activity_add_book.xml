@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBookActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brown_main">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:padding="@dimen/appbar_padding"
+            android:text="@string/app_index"
+            android:textColor="@color/red_br"
+            android:textSize="12pt" />
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="42dp"
+            android:layout_height="37dp"
+            android:background="@color/brown_main"
+            android:foreground="@drawable/ic_baseline_arrow_back_ios_24"
+            app:layout_anchor="@+id/appBarLayout"
+            app:layout_anchorGravity="start|center"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="105dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/mark_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/title"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="@string/title_hint"
+                app:layout_constraintBottom_toBottomOf="@id/mark_title"
+                app:layout_constraintStart_toEndOf="@id/mark_title"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/mark_subtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/subtitle"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_title" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="@string/subtitle_hint"
+                app:layout_constraintBottom_toBottomOf="@id/mark_subtitle"
+                app:layout_constraintStart_toEndOf="@id/mark_subtitle"
+                app:layout_constraintTop_toBottomOf="@id/input_title" />
+
+            <TextView
+                android:id="@+id/mark_isbn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/isbn"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_subtitle" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_isbn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="@string/isbn_hint"
+                app:layout_constraintBottom_toBottomOf="@id/mark_isbn"
+                app:layout_constraintStart_toEndOf="@id/mark_isbn"
+                app:layout_constraintTop_toBottomOf="@id/input_subtitle" />
+
+            <TextView
+                android:id="@+id/mark_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/price"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mark_isbn" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="@string/price_hint"
+                app:layout_constraintBottom_toBottomOf="@id/mark_price"
+                app:layout_constraintStart_toEndOf="@id/mark_price"
+                app:layout_constraintTop_toBottomOf="@id/input_isbn" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/red"
+                android:id="@+id/errorMsg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_price"/>
+
+            <Button
+                android:id="@+id/addBookAction"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/addBook"
+                android:textSize="12dp"
+                android:theme="@style/Theme.Design.Light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/errorMsg" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.textfield.TextInputLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

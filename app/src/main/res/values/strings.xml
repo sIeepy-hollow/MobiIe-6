@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_index">Laba 6</string>
+    <string name="index_of_activity">Laba6</string>
+    <string name="main_place"><pre>Щебетін Богдан\nГрупа ІВ-83\nЗК ІВ-8329</pre></string>
+    <string name="place_bar_1">Main</string>
+    <string name="place_bar_2">Graphic</string>
+    <string name="place_bar_3">Store</string>
+    <string name="place_bar_4">Pictures</string>
+    <string name="place_title">Untitled</string>
+    <string name="place_subtitle">No subtitle</string>
+    <string name="place_isbn">ISBN not provided</string>
+    <string name="place_price">0.00 USD</string>
+    <string name="isbn"><pre>ISBN13: </pre></string>
+    <string name="no_cover">No cover available</string>
+    <string name="authors"><pre>Authors: </pre></string>
+    <string name="publisher"><pre>Publisher: </pre></string>
+    <string name="year"><pre>Year: </pre></string>
+    <string name="pages"><pre>Pages: </pre></string>
+    <string name="rating"><pre>Rating: </pre></string>
+    <string name="nia">NIA</string>
+    <string name="desc"><pre>Description:</pre></string>
+    <string name="place_desc">No description provided.</string>
+    <string name="out_of_five"><pre> / 5</pre></string>
+    <string name="no_result"><pre>Nothing was found...</pre></string>
+    <string name="title"><pre>Title: </pre></string>
+    <string name="subtitle"><pre>Subtitle: </pre></string>
+    <string name="price"><pre>Price: </pre></string>
+    <string name="title_hint"><pre>Please enter title</pre></string>
+    <string name="subtitle_hint"><pre>Please enter subtitle</pre></string>
+    <string name="isbn_hint"><pre>(Not necessary)</pre></string>
+    <string name="price_hint"><pre>Please enter price ($0.00)</pre></string>
+    <string name="addBook">ADD</string>
+    <string name="noTitle">Please, enter book title</string>
+    <string name="invalidISBN">Error! ISBN only 13 digits.</string>
+    <string name="priceNAN">Error! Please  enter price in format 0.00</string>
+    <string name="delete_confirm">Accept  deletion</string>
+</resources>
